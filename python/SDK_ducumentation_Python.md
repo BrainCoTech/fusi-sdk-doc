@@ -1,26 +1,5 @@
 # Fusi cross-platform SDK
 
-## Introduction
-
-Fusi Software Development Kit is a developer toolkit for Focus headband. Developers can use the SDK to develop applications that are suitable for multi-platform applications. You can easily get the user's EEG raw data, brain wave data, user attention data, etc.
-
-The SDK supports a wide range of platforms with high-performance AI algorithms implemented in low-level language, and provides some basic computations while implementing multiple EEG data monitoring functions.
-
-We have designed our technology to enable new forthcoming algorithms to work with our existing Focus headband hardware. Begin your development and familiarity with our API today so that you can take full advantage of the next series of algorithms.
-
-###Features
-
-* Scan available Wi-Fi hotspots
-* Configure headband Wi-Fi connection to specific Wi-Fi
-* Automatic scanning to find the headband in a Wi-Fi network
-* Query the amount of battery power in the headband
-* Query the alpha spike frequency of the user's brain power (only when available)
-* Monitor the connection status of the application with the headband
-* Monitor the rotating posture of the application and the headband
-* Monitor user EEG raw voltage data
-* Monitor user EEG frequency band energy (Delta, Theta, Alpha, LowBeta, HighBeta, Gamma) 
-* Monitor user's current attention rating (BrainCo private AI algorithm)
-* Monitor user's blink events
 
 ### Core function
 
