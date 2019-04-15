@@ -31,7 +31,8 @@ Output:
 
 **Read OTA firmware file**
 
-```dir_path = os.path.abspath(os.path.dirname(__file__))
+```
+dir_path = os.path.abspath(os.path.dirname(__file__))
 firmware_data_path = os.path.join(lib_path, "firmware.ota")
 with open(firmware_data_path, mode='rb') as fw_file:
     fw_data = fw_file.read()
@@ -41,7 +42,7 @@ with open(firmware_data_path, mode='rb') as fw_file:
 
  Override method `on_firmware_update_status_change` and `on_firmware_update_error`
  
-``` python
+```
 class OTAEventListener(FusiHeadbandListener):
 	def on_firmware_update_status_change(self, status):
         print("Firmware update status changed:%s:%s" % (status.stage.name, status.message))
@@ -57,7 +58,7 @@ class OTAEventListener(FusiHeadbandListener):
 
 **Look for target device from devices found**
 
-``` python
+```
 def on_found_devices(devices):
     global headband
     for device in devices:
@@ -75,7 +76,7 @@ def on_found_devices(devices):
 
 **Specify what to do when search device failed**
 
-``` python
+```
 def on_search_error(error):
     print(error)
     global ota_finished
