@@ -7,7 +7,26 @@
 
 
 ## Examples
-###1.search and connect device (example.py)  
+###1. FFT (example_fft.py)
+
+Input data:
+
+```
+array = [2,1,0,-1,-2,-1,0,1,2,1,0,-1,-2,-1,0,1,2,1,0,-1,-2,-1,0,1,2]
+```
+
+Call method **fft_transform** in FusiSDK:
+
+```
+fft = fft_transform(array)
+```
+
+Output:
+
+```
+[0.11821638087705445, 0.1232341319368554, 0.8035190188423144, 0.3271568980997121, 0.046972693121087046, 0.01477784276777906, 0.007021158065102148, 0.017265417598034606, 0.054940709751649296, 0.10673422824584916, 0.061657848075272956, 0.018784028675231573, 0.007262166541151867]
+```
+###2.search and connect device (example.py)  
 
 (1) Initialization
 
@@ -64,7 +83,7 @@ def on_search_error(error):
 
 `FusiSDK.dispose()`
 
-##2.OTA (example_ota.py)  
+##3.OTA (example_ota.py)  
 
 **Read OTA firmware file**
 
@@ -124,13 +143,3 @@ def on_search_error(error):
 ``` 
 FusiSDK.search_devices(on_found_devices, on_search_error)
 ```
-
-
-
-
-
-
-
-
-
-
